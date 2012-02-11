@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xml:lang="de" lang="de">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Jprdy</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Default">
+	<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="js/jprdy.js"></script>
+	<script type="text/javascript" src="js/jquery.fn.autoresize.js"></script>
+	<script type="text/javascript" src="js/jquery.json-2.3.min.js"></script>
+	<script type="text/javascript" src="js/raphael.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#field').jprdy({players:4});
+		});
+	</script>
+</head>
+<body>
+	<audio id="song" src="song.ogg"></audio>
+	<div id="top">&nbsp;</div>
+	<div id="wrapper">
+		<table id="board">
+			<thead>
+				<tr>
+					<th>Test 1</th>
+					<th>Test 1</th>
+					<th>Test 1</th>
+					<th>Test 1</th>
+					<th>Test 1</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="points 100">
+					<td class="r1 c1">100</td>
+					<td class="r1 c2">100</td>
+					<td class="r1 c3">100</td>
+					<td class="r1 c4">100</td>
+					<td class="r1 c5">100</td>
+				</tr>
+				<tr class="points 200">
+					<td class="r2 c1">200</td>
+					<td class="r2 c2">200</td>
+					<td class="r2 c3">200</td>
+					<td class="r2 c4">200</td>
+					<td class="r2 c5">200</td>
+				</tr>
+				<tr class="points 300">
+					<td class="r3 c1">300</td>
+					<td class="r3 c2">300</td>
+					<td class="r3 c3">300</td>
+					<td class="r3 c4">300</td>
+					<td class="r3 c5">300</td>
+				</tr>
+				<tr class="points 400">
+					<td class="r4 c1">400</td>
+					<td class="r4 c2">400</td>
+					<td class="r4 c3">400</td>
+					<td class="r4 c4">400</td>
+					<td class="r4 c5">400</td>
+				</tr>
+				<tr class="points 500">
+					<td class="r5 c1">500</td>
+					<td class="r5 c2">500</td>
+					<td class="r5 c3">500</td>
+					<td class="r5 c4">500</td>
+					<td class="r5 c5">500</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr class="players">
+					<td colspan="5">
+						<span class="playerinfo">
+							<a class="player p1">&nbsp;</a>
+							<span class="playername" id="p1">Spieler 1</span>:
+							<span class="playerscore" id="p1-points">0</span> Punkte
+						</span>
+						<span class="playerinfo">
+							<a class="player p2">&nbsp;</a>
+							<span class="playername" id="p2">Spieler 2</span>:
+							<span class="playerscore" id="p2-points">0</span> Punkte
+						</span>
+						<span class="playerinfo">
+							<a class="player p3">&nbsp;</a>
+							<span class="playername" id="p3">Spieler 3</span>:
+							<span class="playerscore" id="p3-points">0</span> Punkte
+						</span>
+						<span class="playerinfo">
+							<a class="player p4">&nbsp;</a>
+							<span class="playername" id="p4">Spieler 4</span>:
+							<span class="playerscore" id="p4-points">0</span> Punkte
+						</span>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		<div id='menu'>
+			<img src="img/settings.png" alt="" title="Einstellungen"/>
+			<ul>
+				<li><a href='#' id='keyboard'><img src="img/keyboard.png" alt="" title="Tastaturbelegung"/></a></li>
+				<li><a href='#' id='newgame'><img src="img/new.png" alt="" title="Neues Spiel"></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
